@@ -8,4 +8,4 @@ for line in f:
 		if line.rstrip()=="1":
 			positive_sum=positive_sum+1
 
-print "Accuracy: "+str((positive_sum*1.0)/total_sum)+"%"
+print "Accuracy: "+str((positive_sum*100.0)/total_sum)+"%"
