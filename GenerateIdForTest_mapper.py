@@ -14,5 +14,6 @@ for line in sys.stdin:
 	words=filter(None,document.split(" "))
 	words=[word for  word in words if word.lower() not in months]
 	words=" ".join(words)
-	words=labels+"\t"+words
-	print words
+	if words.rstrip():
+		words=labels+"\t"+words
+		print words
